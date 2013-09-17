@@ -12,6 +12,7 @@ after line 64 (foreach ($extensions as $extName) {) , I added:
 if($extName == 0) continue; 
 
 2. Database server does not support the InnoDB storage engine.
+
 In line 87 of app/code/core/Mage/Install/Model/Installer/Db.php, comment all the line from 87 to 92, ie. 
  
  // check InnoDB support
